@@ -1,0 +1,16 @@
+//link to room by converting the title to a slug
+.room
+  = link_to '/room/' + room.title.parameterize + '/'
+    .room-image
+      = image_tag room.image
+    .room-content
+      .title
+        h3 = room.title
+      .price
+        p 
+          - currency = data.settings.units.currency || '€' 
+          = currency + room.price.to_s 
+      .weight
+        p 
+          - weight = data.settings.units.weight || 'kg'
+          = room.weight.to_s + weight

@@ -114,6 +114,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    webrick (1.7.0)
 
 PLATFORMS
   ruby
@@ -126,6 +127,7 @@ DEPENDENCIES
   slim
   tzinfo-data
   wdm (~> 0.1)
+  webrick
 
 BUNDLED WITH
-   1.17.3
+   2.2.8

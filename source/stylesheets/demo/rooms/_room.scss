@@ -1,4 +1,4 @@
-%product {
+%room {
   color: $text-color;
   margin-bottom: 30px;
 
@@ -21,11 +21,11 @@
     @extend %img-responsive;
   }
 
-  .product-image, .product-content {
+  .room-image, .room-content {
     background-color: #fff;
   }
 
-  .product-content {
+  .room-content {
     padding: 10px 30px;
   }
 
