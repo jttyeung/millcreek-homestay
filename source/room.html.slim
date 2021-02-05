@@ -4,9 +4,8 @@
     .meta
       h1 = room.title
 
-      .weight
-        - weight = data.settings.units.weight || 'kg'
-        span = room.weight.to_s + weight
+      .description
+        span = room.description
 
       .price
         - currency = data.settings.units.currency || '€' 

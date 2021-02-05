@@ -42,7 +42,7 @@ data.rooms.each do |_filename, room|
   # room is an array: [filename, {data}]
   proxy "/rooms/#{room[:title].parameterize}/index.html", "room.html", 
   locals: {room: room}, 
-  layout: 'room-detail',
+  layout: 'product-detail',
   ignore: true
 end
 

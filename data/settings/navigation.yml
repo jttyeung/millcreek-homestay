@@ -1,5 +1,6 @@
 nav_items: 
   - {label: 'Home', path: '/'}
   - {label: 'Rooms', path: '/rooms/'}
-  - {label: 'News', path: '/news'}
+  - {label: 'Amenities', path: '/amenities/'}
+  - {label: 'About Us', path: '/about'}
 
