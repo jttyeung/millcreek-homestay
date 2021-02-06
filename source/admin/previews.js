@@ -2,7 +2,7 @@ const BlogPreview = ({ entry, widgetFor }) => {
   const data = entry.get('data').toJS()
   const date = dayjs(data.date).format('DD-MM-YY')
   return (
-    <div className="news-detail">
+    <div className="amenities-detail">
       <div className="container">
         <div className="row">
           <div className="title">

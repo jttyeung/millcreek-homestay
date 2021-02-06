@@ -25,11 +25,11 @@ section.homepage-rooms.rooms
         //to get the actual data:
         = partial 'partials/rooms/room', locals: {room: room}
 
-section.homepage-news.news
+section.homepage-amenities.amenities
   .container
     h2
-      | News
-    .news-items
+      | Amenities
+    .amenities-items
       //get the first two most recent posts
       - blog.articles.first(2).each do | article |
-        = partial 'partials/news/news_item', locals: {article: article}
+        = partial 'partials/amenities/amenities_item', locals: {article: article}
