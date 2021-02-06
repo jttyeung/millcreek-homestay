@@ -19,8 +19,8 @@ section.homepage-rooms.rooms
       | Rooms
     .row
       //room is structured: ['filename', 'data']
-      //sort by newest room
-      - data.rooms.sort {|(_filename_a, a),(_filename_b, b)| b.date <=> a.date}.first(3).each do | _filename, room |
+      //sort by room title
+      - data.rooms.sort {|(_filename_a, a),(_filename_b, b)| a.title <=> b.title}.each do | _filename, room |
 
         //to get the actual data:
         = partial 'partials/rooms/room', locals: {room: room}
