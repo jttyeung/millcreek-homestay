@@ -25,12 +25,6 @@ page '/*.txt', layout: false
 page "/partials/*", layout: false
 page "/admin/*", layout: false
 
-activate :blog do |blog|
-  blog.permalink = "amenities/{year}/{title}.html"
-  blog.sources = "posts/{title}.html"
-  blog.layout = "amenities-detail"
-end
-
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 

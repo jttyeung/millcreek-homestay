@@ -1,8 +1,13 @@
 section.homepage-amenities.amenities
   .container
-    h2
-      | Amenities
-    .amenities-items
-      //get the first two most recent posts
-      - blog.articles.each do | article |
-        = partial 'partials/amenities/amenities_item', locals: {article: article}
+    .row
+      .column
+        h2
+          | Amenities
+        .amenities-items
+          = markdown data.amenities.amenities.list
+      .column
+        h2
+          | Nearby Attractions
+        .amenities-items
+          = markdown data.amenities.amenities.nearby

@@ -5,16 +5,20 @@
 
   h2 {
     margin: 0 0 30px;
+    @extend %col-xs-4;
   }
 
   .amenities-items{
     @extend %row;
+    @extend %col-xs-8;
+    margin-bottom: 60px;
   }
 
-  .amenities-item {
+  ul li {
     @extend %column;
-    @extend %col-xs-12;
-    margin-bottom: 60px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
   }
 
   .image {
@@ -49,6 +53,7 @@
   .wrapper {
     padding: 30px;
   }
+
 
   h3 {
     font-size: 32px;

@@ -1,21 +1,14 @@
-const BlogPreview = ({ entry, widgetFor }) => {
+const AmenitiesPreview = ({ entry, widgetFor }) => {
   const data = entry.get('data').toJS()
-  const date = dayjs(data.date).format('DD-MM-YY')
   return (
-    <div className="amenities-detail">
+    <div className="amenities">
       <div className="container">
         <div className="row">
           <div className="title">
-            <span className="date">{date}</span>
             <h1>{data.title}</h1>
           </div>
         </div>
-        <div className="row">
-          <div className="image">
-            <img src={data.image}/>
-          </div>
-        </div>
-        <div className="row content">{widgetFor('body')}</div>
+        <div className="row content">{widgetFor('list')}</div>
       </div>
     </div>
   )
@@ -89,7 +82,7 @@ const NavigationPreview = ({ entry }) => {
   )
 }
 
-CMS.registerPreviewTemplate('blog', BlogPreview)
+CMS.registerPreviewTemplate('amenities', AmenitiesPreview)
 CMS.registerPreviewTemplate('room', RoomPreview)
 CMS.registerPreviewTemplate('home', HomePreview)
 CMS.registerPreviewTemplate('navigation', NavigationPreview)
