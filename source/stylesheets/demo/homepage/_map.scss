@@ -1,0 +1,64 @@
+// .map {
+//   @extend %container;
+
+//   .iframe-container  {
+// 		text-align:center;
+//     width:100%;
+//   }
+
+  // iframe {
+  //   position: relative;
+  //   left: 50%;
+  //   display: block;
+  //   margin: 0 auto;
+  //   height: 400px;
+  //   width: 600px;
+  // }
+
+  //   @media screen and (max-width: $screen-md-max){
+  //     padding-top: 15%;
+  //   }
+  //   @media screen and (max-width: $screen-xs-max){
+  //     padding-top: 10%;
+  //   }
+  // }
+//   @media screen and (max-width: 400px){
+//     padding-bottom: 50%;
+//   }
+// }
+
+// iframe {
+//   position: relative;
+//   left: 50%;
+//   display: block;
+//   margin: 0 auto;
+//   height: 400px;
+//   width: 600px;
+// }
+
+.map {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-primary-color;
+
+  .iframe-container  {
+    @extend %container;
+		text-align: center;
+    width: 450px;
+    height: 300px;
+
+    iframe {
+      border: 0;
+      display: block;
+      border-style: none;
+      width: 450px;
+      height: 300px;
+    }
+
+  }
+  @media screen and (max-width: 400px){
+    padding-bottom: 50%;
+  }
+}
+
+
