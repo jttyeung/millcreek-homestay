@@ -5,7 +5,6 @@ footer {
   .header-primary {
     position: relative;
     height: auto;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 
     .navigation {
       background-color: transparent;
@@ -16,7 +15,7 @@ footer {
   }
 
   .footer-content {
-    padding: 30px 15px 60px;
+    padding: 5px;
   }
 
   .newsletter {
@@ -87,7 +86,7 @@ footer {
   footer {
     .header-primary {
       .logo  a {
-        padding-left: 15px
+        padding-left: 0px
       }
       .nav-button {
         display: none;

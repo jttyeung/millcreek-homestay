@@ -10,7 +10,7 @@
     height: 80px;
     a {
       display: block;
-      padding: 26px 30px;
+      padding: 16px 30px 0px 0px;
     }
   }
 
@@ -65,6 +65,16 @@
       }
     }
   }
+  @media screen and (max-width: $screen-md-max) {
+    img {
+      height: 40px;
+    }
+  }
+  @media screen and (max-width: $screen-sm-max) {
+    img {
+      height: 34px;
+    }
+  }
   @media screen and (max-width: $screen-xs-max) {
     .navigation {
       display: none;
@@ -87,6 +97,15 @@
 
     .nav-button {
       display: block;
+    }
+
+    img {
+      height: 28px;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    img {
+      height: 24px;
     }
   }
 }
