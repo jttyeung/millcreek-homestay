@@ -7,9 +7,11 @@
       .title
         h3 = room.title
       .price
-        p 
+        p
           - currency = data.settings.units.currency || '€' 
-          = currency + room.price.to_s 
+          - room.price.each do |p|
+            span = currency + p.to_s
+            br
       .description
         p 
           = room.description
