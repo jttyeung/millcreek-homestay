@@ -1,7 +1,11 @@
 .map {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: $background-primary-color;
+  border-top: 1px solid $background-primary-color;
+  
+  .location {
+    @extend %container;
+  }
 
   .iframe-container  {
     @extend %container;

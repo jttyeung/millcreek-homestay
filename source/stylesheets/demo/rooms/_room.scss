@@ -1,4 +1,6 @@
-%room {
+.room {
+  @extend %column;
+  @extend %col-sm-6;
   color: $text-color;
   margin-bottom: 30px;
 

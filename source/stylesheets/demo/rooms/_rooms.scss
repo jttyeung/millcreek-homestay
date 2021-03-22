@@ -7,12 +7,6 @@
     margin: 0 0 30px;
   }
 
-  .room {
-    @extend %column;
-    @extend %col-sm-6;
-    @extend %room;
-  }
-
   @media screen and (max-width: $screen-xs-max) {
     padding-top: 15px;
     padding-bottom: 15px;

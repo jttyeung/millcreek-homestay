@@ -39,6 +39,5 @@ section.homepage-amenities.amenities
         .amenities-items
           = markdown data.amenities.amenities.nearby
 
-section.map
-  .iframe-container
-    iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48387.53649204844!2d-111.85459588545783!3d40.713150501060255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQxJzIwLjIiTiAxMTHCsDUwJzQ3LjUiVw!5e0!3m2!1sen!2sus!4v1612945142146!5m2!1sen!2sus" allowfullscreen="" aria-hidden="false" tabindex="0"
+section.homepage-map.location
+  = partial 'location'
