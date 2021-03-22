@@ -1,0 +1,31 @@
+.contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top: 1px solid $background-primary-color;
+
+  .info {
+    @extend %container;
+  }
+  
+  h2 {
+    margin: 0 0 30px;
+  }
+
+  h3 {
+      text-align: center;
+  }
+
+  a {
+    color: $primary-color;
+    &:hover, &:focus {
+      color: $secondary-color;
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and (max-width: 380px){
+    padding-bottom: 30%;
+  }
+}
+
+
