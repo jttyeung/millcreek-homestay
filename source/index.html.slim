@@ -1,5 +1,5 @@
 ---
-title: Kaldi - Middleman + Netlify CMS Example
+title: Millcreek Homestay
 ---
 
 section.hero style=background_image(image_path(data.pages.home.hero.image))
@@ -13,23 +13,34 @@ section.homepage-story
       .story-content
         = markdown data.pages.home.story
 
-section.homepage-products.products
+section.homepage-rooms.rooms
   .container
     h2
-      | Products
+      | Rooms
     .row
-      //product is structured: ['filename', 'data']
-      //sort by newest product
-      - data.products.sort {|(_filename_a, a),(_filename_b, b)| b.date <=> a.date}.first(3).each do | _filename, product |
+      //room is structured: ['filename', 'data']
+      //sort by room title
+      - data.rooms.sort {|(_filename_a, a),(_filename_b, b)| a.title <=> b.title}.each do | _filename, room |
 
         //to get the actual data:
-        = partial 'partials/products/product', locals: {product: product}
+        = partial 'partials/rooms/room', locals: {room: room}
 
-section.homepage-news.news
+section.homepage-amenities.amenities
   .container
-    h2
-      | News
-    .news-items
-      //get the first two most recent posts
-      - blog.articles.first(2).each do | article |
-        = partial 'partials/news/news_item', locals: {article: article}
+    .row
+      .column
+        h2
+          | Amenities
+        .amenities-items
+          = markdown data.amenities.amenities.list
+      .column
+        h2
+          | Nearby Attractions
+        .amenities-items
+          = markdown data.amenities.amenities.nearby
+
+section.homepage-map.location
+  = partial 'location'
+
+section.homepage-about.us
+  = partial 'about'

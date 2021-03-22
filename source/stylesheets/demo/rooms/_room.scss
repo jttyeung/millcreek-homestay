@@ -1,0 +1,58 @@
+.room {
+  @extend %column;
+  @extend %col-sm-6;
+  color: $text-color;
+  margin-bottom: 30px;
+
+  &:hover, &:focus {
+    a {
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.10);
+      text-decoration: none;
+    }
+  }
+
+  a {
+    display: block;
+    color: $text-color;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 400ms ease-in-out;
+  }
+
+
+  img {
+    @extend %img-responsive;
+  }
+
+  .room-image, .room-content {
+    background-color: #fff;
+  }
+
+  .room-content {
+    padding: 10px 30px;
+  }
+
+  .title, .price {
+    display: inline-block;
+  }
+
+  .price p {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    margin-top: -9px;
+  }
+
+  .price {
+    float: right;
+    font-size: 24px;
+    color: $primary-color;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    margin-bottom: 15px;
+  }
+}

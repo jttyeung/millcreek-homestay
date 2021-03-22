@@ -8,36 +8,37 @@ public_folder: /images/uploads
 
 collections:
   #yaml middleman data example
-  - name: product
-    label: Product
+  - name: room
+    label: Room
     format: yml
     extension: yml
-    folder: data/products/
+    folder: data/rooms/
     create: true
     slug: '{{title}}'
     fields:
       - {label: Title, name: title, widget: string, required: true}
-      - {label: Publish Date, name: date, widget: datetime}
       - {label: Image, name: image, widget: image, required: true}
 
-      - {label: Weight, name: weight, widget: number}
+      - {label: Description, name: description, widget: string}
       - {label: Price, name: price, widget: number}
       - {label: Body, name: body, widget: markdown}
 
-#markdown middleman blog example
-  - name: blog
-    label: Blog
-    folder: source/posts/
-    extension: .html.md
-    format: frontmatter
-    create: true
-    slug: '{{title}}'
-    fields:
-      - {label: Title, name: title, widget: string, required: true}
-      - {label: Publish Date, name: date, widget: datetime}
-      - {label: Description, name: description, widget: string}
-      - {label: Image, name: image, widget: image}
-      - {label: Body, name: body, widget: markdown}
+  - name: amenities
+    label: Amenities    
+    files:
+      - file: "data/amenities/amenities.yml"
+        label: Amenities
+        name: amenities
+        fields:
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Image, name: image, widget: image}
+          - label: Story
+            name: story
+            widget: markdown
 
   - name: pages
     label: Pages
@@ -77,10 +78,5 @@ collections:
             name: currency
             widget: select
             options: ['€', '$', '£']
-            default: '€'
+            default: '$'
 
-          - label: Weight
-            name: weight
-            widget: select
-            options: ['kg', ' st', ' lb']
-            default: 'kg'

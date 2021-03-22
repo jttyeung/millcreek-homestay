@@ -1,0 +1,22 @@
+.room-detail
+  .content
+    .meta
+      h1 = room.title
+
+      .description
+        span = room.description
+
+      .price
+        - currency = data.settings.units.currency || '€' 
+        - room.price.each do |p|
+          span = currency + p.to_s
+          br
+
+    .body
+      = markdown room.body
+
+  .image style=background_image(image_path(room.image))
+  
+  .room-images
+    - room.images.each do |ri|
+      .room-image style=background_image(image_path(ri))

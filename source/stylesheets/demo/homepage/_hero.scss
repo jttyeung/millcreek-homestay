@@ -23,7 +23,18 @@
       padding-top: 10%;
     }
   }
+  @media screen and (max-width: 800px){
+    padding-bottom: 50%;
+    h1 {
+      font-size: 4vh;
+      padding-top: 10%;
+    }
+  }
   @media screen and (max-width: 400px){
     padding-bottom: 50%;
+    h1 {
+      font-size: 3vh;
+      padding-top: 10%;
+    }
   }
 }
