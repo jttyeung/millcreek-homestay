@@ -2,5 +2,8 @@ section.homepage-about.about
   .container
     h2
       | About Us
-    .content
-      = markdown data.about.about.us
+    .column
+      .photo style=background_image(image_path(data.about.about.photo))
+    .column
+      .content
+        = markdown data.about.about.us
