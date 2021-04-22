@@ -71,11 +71,33 @@
     }
   }
   @media screen and (max-width: $screen-sm-max) {
+    .navigation {
+      display: none;
+      width: 100%;
+      height: auto;
+      top: 80px;
+      right: 0;
+      background: #fff;
+      border-top: 1px solid $background-primary-color;
+      li {
+        display: block;
+        margin: 30px 0;
+      }
+
+      &.open {
+        height: calc(100vh - 80px);
+        display: block
+      }
+    }
+
+    .nav-button {
+      display: block;
+    }
     img {
       height: 34px;
     }
   }
-  @media screen and (max-width: $screen-xs-max) {
+  @media screen and (max-width: $screen-sm-max) {
     .navigation {
       display: none;
       width: 100%;
