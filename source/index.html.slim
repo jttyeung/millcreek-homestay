@@ -28,6 +28,13 @@ section.homepage-rooms.rooms
 section.homepage-amenities.amenities
   .container
     .row
+      h2
+        | Common Areas
+    .row
+      .house-images
+        - data.amenities.amenities.images.each do |ai|
+          .house-image style=background_image(image_path(ai))
+    .row
       .column
         h2
           | Amenities

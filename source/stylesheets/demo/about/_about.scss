@@ -7,7 +7,14 @@
     margin: 0 0 30px;
   }
 
+  .photo {
+    @extend %col-xs-3;
+    height: 320px;
+    background-repeat: no-repeat;
+  }
+
   .content p {
+    @extend %col-xs-6;
     margin-top: 15px;
 
     a {
@@ -24,11 +31,25 @@
       width: 100%;
       margin: 0 0 15px;
     }
+    .photo {
+      width: 30%;
+    }
+    .content p {
+      margin-left: 5%;
+      width: 65%;
+    }
   }
   @media screen and (max-width: $screen-sm-max) {
     h2 {
       width: 100%;
       margin: 0 0 15px;
+    }
+    .photo {
+      width: 95%;
+      margin-left: 5%;
+    }
+    .content p {
+      width: 85%;
     }
   }
   @media screen and (max-width: $screen-xs-max) {
