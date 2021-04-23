@@ -58,13 +58,8 @@ section.homepage-pricing.pricing
 section.homepage-map.location
   = partial 'location'
 
-section.homepage-about.us
+section.homepage-about
   = partial 'about'
 
-section.homepage-reviews.reviews
-  .container
-      .row
-        .column
-          h2
-            | Reviews
-        <div class='embedsocial-reviews' data-ref="afa0b503a14ff70da7b85822483a8a32da48918c"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ri.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialReviewsScript"));</script>
+section.homepage-reviews
+  = partial 'reviews'
