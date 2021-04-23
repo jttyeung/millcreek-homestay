@@ -66,6 +66,23 @@
     }
   }
   @media screen and (max-width: $screen-md-max) {
+    .navigation {
+      li {
+        display: inline-block;
+        margin: 0 6px;
+      }
+      a {
+        font-size: 17px;
+        font-weight: 700;
+        color: $text-color;
+        &.active, &:hover, &:focus{
+          color: $primary-color;
+        }
+      }
+      @media screen and (max-width: $screen-xs-max){
+        display: none;
+      }
+    }
     img {
       height: 40px;
     }

@@ -5,3 +5,4 @@ nav_items:
   - {label: 'Pricing', path: '/pricing/'}
   - {label: 'Location', path: '/location'}
   - {label: 'About Us', path: '/about'}
+  - {label: 'Reviews', path: '/reviews/'}
