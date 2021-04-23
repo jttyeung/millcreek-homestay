@@ -2,33 +2,33 @@
 @charset 'utf-8';
 
 //bootstrap stuff
-@import 'demo/base/variables';
-@import 'demo/base/mixins';
-@import 'demo/base/normalize';
-@import 'demo/base/scaffolding';
-@import 'demo/base/type';
+@import 'css/base/variables';
+@import 'css/base/mixins';
+@import 'css/base/normalize';
+@import 'css/base/scaffolding';
+@import 'css/base/type';
 
-@import 'demo/base/colors';
-@import 'demo/base/typography';
-@import 'demo/base/grid';
-@import 'demo/base/placeholders';
+@import 'css/base/colors';
+@import 'css/base/typography';
+@import 'css/base/grid';
+@import 'css/base/placeholders';
 
-@import 'demo/shared/header-primary';
-@import 'demo/shared/main-content';
-@import 'demo/shared/footer';
+@import 'css/shared/header-primary';
+@import 'css/shared/main-content';
+@import 'css/shared/footer';
 
-@import 'demo/rooms/rooms';
-@import 'demo/rooms/room';
-@import 'demo/rooms/room-detail';
+@import 'css/rooms/rooms';
+@import 'css/rooms/room';
+@import 'css/rooms/room-detail';
 
-@import 'demo/amenities/amenities';
-@import 'demo/amenities/amenities-detail';
+@import 'css/amenities/amenities';
+@import 'css/amenities/amenities-detail';
 
-@import 'demo/about/about';
+@import 'css/about/about';
 
-@import 'demo/pricing/pricing';
+@import 'css/pricing/pricing';
 
-@import 'demo/homepage/hero';
-@import 'demo/homepage/story';
-@import 'demo/homepage/map';
-@import 'demo/homepage/contact';
+@import 'css/homepage/hero';
+@import 'css/homepage/story';
+@import 'css/homepage/map';
+@import 'css/homepage/contact';
