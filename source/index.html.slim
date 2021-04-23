@@ -46,6 +46,15 @@ section.homepage-amenities.amenities
         .amenities-items
           = markdown data.amenities.amenities.nearby
 
+section.homepage-pricing.pricing 
+  .container
+    .row
+      .column
+        h2
+          | Pricing
+        .pricing-details
+          = markdown data.pricing.pricing.costs
+
 section.homepage-map.location
   = partial 'location'
 
