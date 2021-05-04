@@ -1,4 +1,6 @@
 # Millcreek Homestay
+[![Netlify Status](https://api.netlify.com/api/v1/badges/267c937c-a53f-4d5e-9725-f91371a7391e/deploy-status)](https://app.netlify.com/sites/millcreek-homestay/deploys)
+
 ## A listing site for a furnished homestay in Salt Lake City, Utah.
 
 Come stay with us at the Millcreek Homestay!
