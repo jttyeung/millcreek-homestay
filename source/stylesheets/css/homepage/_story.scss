@@ -3,7 +3,6 @@
 
   .story-content {
     @extend %column;
-    @extend %col-sm-8;
     padding-top: 60px;
     padding-bottom: 60px;
     color: rgba(255, 255, 255, 1);
