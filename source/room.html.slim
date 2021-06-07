@@ -11,6 +11,8 @@
         - room.price.each do |p|
           span = currency + p.to_s
           br
+        br
+        span = room.priceinfo
 
     .body
       = markdown room.body
