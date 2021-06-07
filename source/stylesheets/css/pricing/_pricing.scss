@@ -3,14 +3,14 @@
   padding-bottom: 60px;
   border-top: 1px solid $background-primary-color;
 
-  h2 {
-    margin: 0 0 30px;
+  h2, h3 {
     @extend %col-xs-4;
+    margin: 0 0 30px;
   }
 
-  .pricing-details{
-    @extend %row;
+  .pricing-details, .calendar {
     @extend %col-xs-8;
+    margin: 0 0 30px;
   }
 
   ul li {
@@ -19,11 +19,11 @@
   }
 
   @media screen and (max-width: $screen-md-max) {
-    h2 {
+    h2, h3 {
       width: 100%;
       margin: 0 0 15px;
     }
-    .pricing-details {
+    .pricing-details, .calendar {
       width: 100%;
       margin: 0 0 15px;
     }
@@ -32,10 +32,10 @@
     }
   }
   @media screen and (max-width: $screen-sm-max) {
-    .pricing-details {
-      width: 90%;
+    .pricing-details, .calendar {
+      width: 100%;
     }
-    h2 {
+    h2, h3 {
       width: 100%;
       margin: 0 0 15px;
     }
@@ -47,10 +47,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
 
-    .pricing-details {
+    .pricing-details, .calendar {
       width: 100%;
     }
-    h2 {
+    h2, h3 {
       width: 100%;
       margin: 0 0 15px;
     }

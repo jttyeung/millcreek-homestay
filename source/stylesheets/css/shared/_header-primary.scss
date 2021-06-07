@@ -24,7 +24,7 @@
     right: 15px;
     li {
       display: inline-block;
-      margin: 0 15px;
+      margin: 0 12px;
     }
     a {
       font-size: 18px;
@@ -67,24 +67,29 @@
   }
   @media screen and (max-width: $screen-md-max) {
     .navigation {
+      display: none;
+      width: 100%;
+      height: auto;
+      top: 80px;
+      right: 0;
+      background: #fff;
+      border-top: 1px solid $background-primary-color;
       li {
-        display: inline-block;
-        margin: 0 6px;
+        display: block;
+        margin: 30px 0;
       }
-      a {
-        font-size: 17px;
-        font-weight: 700;
-        color: $text-color;
-        &.active, &:hover, &:focus{
-          color: $primary-color;
-        }
-      }
-      @media screen and (max-width: $screen-xs-max){
-        display: none;
+
+      &.open {
+        height: calc(100vh - 80px);
+        display: block
       }
     }
+
+    .nav-button {
+      display: block;
+    }
     img {
-      height: 40px;
+      height: 34px;
     }
   }
   @media screen and (max-width: $screen-sm-max) {
