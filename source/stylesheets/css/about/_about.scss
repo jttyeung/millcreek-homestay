@@ -50,7 +50,8 @@
       margin-left: 5%;
     }
     .content p {
-      width: 85%;
+      width: 100%;
+      margin: 0 0 30px;
     }
   }
   @media screen and (max-width: $screen-xs-max) {
@@ -60,6 +61,14 @@
     h2 {
       width: 100%;
       margin: 0 0 15px;
+    }
+    .photo {
+      width: 95%;
+      margin-left: 5%;
+    }
+    .content p {
+      width: 85%;
+      margin: 0 0 30px;
     }
   }
 }
