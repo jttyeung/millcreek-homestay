@@ -1,9 +1,13 @@
 section.homepage-about.about
   .container
-    h2
-      | About Us
-    .column
-      .photo style=background_image(image_path(data.about.about.photo))
-    .column
+    .row
+      h2
+        | About Us
+    .row
+      .photo style=background_image(image_path(data.about.about.family))
       .content
         = markdown data.about.about.us
+    .row
+      .photo style=background_image(image_path(data.about.about.dog))
+      .content
+        = markdown data.about.about.eames

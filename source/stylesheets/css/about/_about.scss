@@ -11,10 +11,11 @@
     @extend %col-xs-3;
     height: 320px;
     background-repeat: no-repeat;
+    margin: 0 0 30px;
   }
 
   .content p {
-    @extend %col-xs-6;
+    @extend %col-xs-8;
     margin-top: 15px;
 
     a {
