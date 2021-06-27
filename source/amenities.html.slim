@@ -6,7 +6,8 @@ section.homepage-amenities.amenities
     .row
       .house-images
         - data.amenities.amenities.images.each do |ai|
-          .house-image style=background_image(image_path(ai))
+          .house-image
+            = image_tag image_path(ai)
     .row
       .column
         h2
