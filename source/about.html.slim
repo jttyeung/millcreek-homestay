@@ -4,9 +4,7 @@
       | About Us
     .row
     .photo style=background_image(image_path(data.about.about.family))
+    .photo style=background_image(image_path(data.about.about.kitties))
+    .row
     .content
       = markdown data.about.about.us
-    .row
-    .photo style=background_image(image_path(data.about.about.dog))
-    .content
-      = markdown data.about.about.eames
