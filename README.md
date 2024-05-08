@@ -21,3 +21,31 @@ This repo contains an **[website](https://middleman-netlify-cms.netlify.com/)** 
 **Middleman** is a static site generator using all the shortcuts and tools in modern web development. Check out [middlemanapp.com](http://middlemanapp.com/) for detailed tutorials, including a [getting started guide](http://middlemanapp.com/basics/getting-started/).
 
 **Netlify CMS** is a CMS for static site generators. Give non-technical users a simple way to edit and add content to any site built with a static site generator. 
+
+
+
+<br><br><br>
+
+---
+<br>
+
+## Development
+
+### Using docker
+```
+$ docker-compose build
+$ docker-compose run --service-ports web middleman server
+```
+
+### Without docker
+Be sure to check out the [middleman installation guide](https://middlemanapp.com/basics/install/)
+```
+$ git clone https://github.com/tomrutgers/middleman-starter-netlify-cms
+$ cd middleman-starter-netlify-cms
+$ bundle install
+$ middleman server
+```
+
+## Deploy
+
+Push or merge to master, and Netlify should automatically update/build a new release.
